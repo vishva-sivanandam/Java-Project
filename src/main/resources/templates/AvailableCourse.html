@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Available Courses</title>
+
+    <script src="myscript.js"></script>
+
+    <style>
+        body {
+            padding: 50px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        td {
+            background-color: aliceblue;
+            text-align: center;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        th:nth-child(1) {
+            width: 100px;
+        }
+
+        th:nth-child(2) {
+            width: 150px;
+        }
+
+        th:nth-child(3) {
+            width: 150px;
+        }
+
+        th:nth-child(4) {
+            width: 140px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<h1>Available Courses</h1>
+
+<table border="1">
+
+    <thead>
+    <tr>
+        <th>Course Id</th>
+        <th>Course Name</th>
+        <th>Course Trainer</th>
+        <th>Course Duration</th>
+    </tr>
+    </thead>
+
+    <tbody id="coursetable">
+    </tbody>
+
+</table>
+
+<script>
+    window.onload = function () {
+        showCourses();
+    };
+</script>
+
+</body>
+
+</html>
